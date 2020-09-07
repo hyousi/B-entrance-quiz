@@ -2,7 +2,7 @@ package com.thoughtworks.capability.gtb.entrancequiz.domain;
 
 public class Student {
 
-    private int id;
+    private Integer id;
     private String name;
 
     public Student(int id, String name) {
@@ -10,7 +10,7 @@ public class Student {
         this.name = name;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 

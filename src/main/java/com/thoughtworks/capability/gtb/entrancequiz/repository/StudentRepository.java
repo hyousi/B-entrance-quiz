@@ -96,6 +96,9 @@ public class StudentRepository {
     }
 
     public void add(Student student) {
+        if (student.getId() == null || student.getId() == 0) {
+            student.setId(size() + 1);
+        }
         studentList.add(student);
     }
 
