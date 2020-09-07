@@ -17,6 +17,11 @@ public class Group {
         this.name = String.format("Team %d", id);
     }
 
+    public Group(Integer id, @NonNull String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public void add(Student student) {
         this.students.add(student);
     }
